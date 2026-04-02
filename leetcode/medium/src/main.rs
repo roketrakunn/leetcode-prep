@@ -1,3 +1,4 @@
+mod max_num_of_ops2;
 mod longest_arith_seq;
 mod right_triangles;
 mod sub_seqs;
