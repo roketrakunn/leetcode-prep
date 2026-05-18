@@ -1,6 +1,6 @@
 struct Solution; 
 
-use std::{collections::HashMap, usize};
+use std::collections::HashMap;
 
 impl Solution {
     pub fn maximize_the_profit(n: i32, offers: Vec<Vec<i32>>) -> i32 {

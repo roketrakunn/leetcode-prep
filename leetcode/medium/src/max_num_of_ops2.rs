@@ -15,10 +15,10 @@ impl Solution {
 
             let mut best = 0;
 
-            if l + 1 <= r && nums[l] + nums[l + 1] == score {
+            if l < r && nums[l] + nums[l + 1] == score {
                 best = best.max(1 + count(nums, l + 2, r, score, memo));
             }
-            if r >= 1 && r - 1 >= 1 && nums[r] + nums[r - 1] == score {
+            if r > 1 && nums[r] + nums[r - 1] == score {
                 best = best.max(1 + count(nums, l, r - 2, score, memo));
             }
             if nums[l] + nums[r] == score {

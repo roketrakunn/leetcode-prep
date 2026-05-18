@@ -31,7 +31,7 @@ impl Solution {
                 if needed % 2 == 0 {
                     let d = needed / 2;
                     let left_len  = if j >= 2 && nums[j-1] - nums[j-2] == d { l[j-1] } else { 1 };
-                    let right_len = if j + 1 <= n - 2 && nums[j+2] - nums[j+1] == d { r[j+1] } else { 1 };
+                    let right_len = if j < n - 2 && nums[j+2] - nums[j+1] == d { r[j+1] } else { 1 };
                     ans = ans.max(left_len + right_len + 1);
                 }
             }
