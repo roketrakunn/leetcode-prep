@@ -1,3 +1,4 @@
+mod length_of_longest_substring;
 mod max_num_of_ops2;
 mod longest_arith_seq;
 mod right_triangles;
