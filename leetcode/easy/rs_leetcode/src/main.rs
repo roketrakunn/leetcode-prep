@@ -1,5 +1,7 @@
+mod rows_and_columns;
+mod subs_of_three;
+mod maxi_depth_of_paratheses;
 mod delayed_toa;
-mod min_time_to_type;
 mod binary_search;
 mod smallest_index_sum;
 fn main() {
